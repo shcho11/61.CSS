@@ -29,6 +29,54 @@
  
   <p>
    1. HTML문서안에 style 속성을 사용함 (in-line)
+   ex)
+   <html>
+    <head>
+     <title>shcho11 github</title>
+    </head>
+    <body>
+     <h1 style="color:blue; text-align:center;">속성처럼 style 사용하기</h1>
+    </body>
+   </html>
+  </p>
+ 
+  <p>
+   2. style 태그를 사용하기 (internal)
+   ex)
+   <html>
+    <head>
+     <title>shcho11 github</title>
+     <style type="text/css">
+      h1 {
+      color:blue; text-align:center;
+      }
+     </style>
+    </head>
+    <body>
+     <h1>style 태그를 사용하기</h1>
+    </body>
+   </html>
+  </p>
+ 
+  <p>
+   3. css파일을 별도로 만들어서 html문서에 연결시키기 (external)
+   ex) css확장자 파일(test.css)
+   h1 {
+   color:blue; text-align:center;
+   }
+   
+   ex) htm확장자 파일(main.html)
+   <html>
+    <head>
+     <title>shcho11 github</title>
+     <link rel="stylesheet" type="text/css" href="test.css"/>
+    </head>
+    <body>
+     css파일을 별도로 만들어서 html문서에 연결시키기
+    </body>
+   </html>
+   
+ 
  
   </div>
  </body>
