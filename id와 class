@@ -1,0 +1,96 @@
+id와 클래스
+
+1. id
+- 스타일을 지정할 때 1가지만 지정해서 쓰는 이름
+- 표기방식 : #이름
+- 1개 문서에 고유한 id를 1개만 쓸 수 있다
+
+- 예시 (internal)
+
+<html>
+ <head>
+  <style>
+  #pcolor {
+  color:red; text-align:center;
+  }
+  #h1color {
+  color:blue;
+  }
+  </style>
+ </head>
+ <body>
+  <p id="pcolor">shcho11 깃허브에 오신 것을</p>
+  <h1 id="h1color">환영합니다</h1>
+ </body>
+</html>
+
+- 예시 (external) (다수 페이지에 동일한 스타일 적용 위해선 external 사용이 가장 편리함)
+
+1) css확장자파일 (test.css)
+#pcolor {
+color:red; text-align:center;
+}
+#h1color {
+color:blue;
+}
+
+2) htm확장자파일 (main.htm)
+<html>
+ <head>
+  <title>shcho11 github</title>
+  <link rel="stylesheet" type="text/css" href="test.css"/>
+ </head>
+ <body>
+  <p id="#pcolor">shcho11 깃허브에 오신 것을</p>
+  <h1 id="#h1color">환영합니다</h1>
+ </body>
+</html>
+  
+
+2. class
+- 그룹으로 묶어서 스타일을 지정할 때 쓰는 이름
+- 표기방식 : .이름
+
+- 예시 (external)
+
+1) css확장자파일 (test.css)
+.start {
+color:red; text-align:center;
+}
+
+2) htm확장자파일 (main.htm)
+
+<html>
+ <head>
+  <title>shcho11 github</title>
+  <link rel="stylesheet" type="text/css" href="test.css"/>
+ </head>
+ <body>
+  <p class="start">shcho11 깃허브에 오신 것을</p>
+  <h1 class="start">환영합니다</h1>
+ </body>
+</html>
+
+- 예시 변형 (external) (p에만 속성 주기)
+
+1) css확장자파일 (test.css)
+p.start {
+color:red; text-align:center;
+}
+
+2) htm확장자파일 (main.htm)
+
+<html>
+ <head>
+  <title>shcho11 github</title>
+  <link rel="stylesheet" type="text/css" href="test.css"/>
+ </head>
+ <body>
+  <p class="start">shcho11 깃허브에 오신 것을</p>
+  <h1 class="start">환영합니다</h1>
+ </body>
+</html>
+
+(!) id, class 이름은 자유롭게 지을 수 있지만, 숫자로 시작해선 안됨 (#8palign(X) )
+
+
