@@ -21,11 +21,14 @@
    <ol start="1">
     <li>속성처럼 style적용</li>
     <li>style 태그를 사용</li>
-    <li>css파일을 별도로 만들어 html문서에 연결</li>
+    <li><b>css파일을 별도로 만들어 html문서에 연결</b></li>
    </ol>
   <br>
   이 중 여러 문서를 수정하기에는 2,3 번이 좋으며, 그 중에서도 3번이 가장 좋음.
   </p>
+ 
+  <p>
+   1. HTML문서안에 style 속성을 사용함 (in-line)
  
   </div>
  </body>
